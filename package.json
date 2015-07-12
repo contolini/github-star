@@ -1,0 +1,52 @@
+{
+  "name": "github-star",
+  "version": "0.1.0",
+  "description": "Star all the repos of a GitHub org.",
+  "homepage": "http://www.consumerfinance.gov/",
+  "author": {
+    "name": "Chris Contolini",
+    "email": "chris@contolini.com",
+    "url": "https://contolini.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contolini/github-star"
+  },
+  "license": "CC0",
+  "keywords": [
+    "github",
+    "github api",
+    "star",
+    "repository"
+  ],
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~3.0.1",
+    "grunt-banner": "~0.4.0",
+    "grunt-bower-task": "~0.4.0",
+    "grunt-browserify": "^3.8.0",
+    "grunt-concurrent": "~1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.12.3",
+    "grunt-contrib-less": "~1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-eslint": "^14.0.0",
+    "grunt-legacssy": "~0.4.0",
+    "grunt-string-replace": "~1.2.0",
+    "grunt-topdoc": "~0.3.0",
+    "jit-grunt": "~0.9.1",
+    "time-grunt": "~1.2.1"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "es6-promise": "^2.3.0",
+    "whatwg-fetch": "^0.9.0"
+  }
+}

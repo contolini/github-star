@@ -1,0 +1,19 @@
+{
+  "name": "github-star",
+  "version": "0.1.0",
+  "description": "Star all the repos of a GitHub org.",
+  "homepage": "http://www.consumerfinance.gov/",
+  "author": {
+    "name": "Chris Contolini",
+    "email": "chris@contolini.com",
+    "url": "https://contolini.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contolini/github-star"
+  },
+  "license": "CC0",
+  "dependencies": { 
+    "capital-framework": "^1.0.0"
+  }
+}
