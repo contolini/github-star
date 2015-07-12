@@ -43,10 +43,17 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "build": "grunt build"
   },
   "dependencies": {
     "es6-promise": "^2.3.0",
     "whatwg-fetch": "^0.9.0"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "prep": [
+      "build"
+    ]
   }
 }
