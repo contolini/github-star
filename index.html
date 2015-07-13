@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+
+<!--
+    ===========
+    GLOBAL META
+    ===========
+-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+    ==================
+    PAGE-SPECIFIC META
+    ==================
+-->
+
+    <title>Star 'em all</title>
+    <meta name="description" content="A tool to star all GitHub repositories owned by a particular GitHub organization.">
+
+<!--
+    ======
+    STYLES
+    ======
+    The number of stylesheets here must be kept to a minimum.
+    Unless adding a significant amount of CSS that is specific to a single page
+    or section of the site, all new styles should be added to src/static/css/app.less.
+-->
+
+<!--[if lt IE 9]>      <link rel="stylesheet" href="static/css/main.ie.min.css"> <![endif]-->
+<!--[if gt IE 8]><!--> <link rel="stylesheet" href="static/css/main.min.css"> <!--<![endif]-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!--
+    ============
+    HEAD SCRIPTS
+    ============
+    The following scripts must be included in the head. DO NOT ADD ANY MORE.
+    All other scripts should go before the closing body tag.
+    If you come across a script that makes a convincing case to be included in
+    the head, then file an issue or PR to discuss including it.
+-->
+
+<!--[if lt IE 9]>
+    <script src="/static/vendor/html5shiv/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+
+    <script>
+        // Confirm availability of JS and remove no-js class from html
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2');
+    </script>
+
+</head>
+
+<body>
+
+<!--
+    =================
+    Begin page source
+    =================
+-->
+
+<main class="content" id="main" role="main">
+    <div class="content_wrapper">
+        <div class="content_main">
+            <h1>Star 'em all</h1>
+            <h4 id="msg">Star all the code repositories of the provided GitHub organization.</h4>
+            <form action="#" id="star-em">
+                <label class="form-label-header">GitHub organization:</label>
+                <input class="input__super" type="text" title="GitHub user or organization" id="org"></input>
+                <button class="btn btn__super" id="go" type="submit">Go!</button>
+                <button class="btn btn__super btn__disabled hidden" disabled="disabled" id="loading" title="Loading">
+                    <span class="u-visually-hidden">Loading</span>
+                    <span class="cf-icon cf-icon-update cf-icon__spin"></span>
+                </button>
+            </form>
+        </div><!-- END .content_main -->
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <!-- Footer stuff -->
+</footer>
+
+<!--
+    ============
+    BODY SCRIPTS
+    ============
+    The number of scripts here must be kept to a minimum.
+    Unless adding a significant amount of JS that is specific to a single page
+    or section of the site, all custom JS should be added to src/static/js/app.js.
+-->
+
+<script src="static/js/main.min.js"></script>
+
+</body>
